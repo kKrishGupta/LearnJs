@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #hide{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <!-- <input required minlength="3" maxlength="10" id="name" type="text" placeholder ="name"> -->
+    <!-- <input pattern="[a-z]{3,8}" id="name" type="text" placeholder ="name"> -->
+<input id="name" type="text" placeholder ="name">
+    <div id="hide">
+      <small style="color: red; ">Your name should be greater than 2 Characters</small> 
+      <br><br> 
+    </div>
+      <br><br> 
+    <input type="email" placeholder="email"> <br><br> 
+    <input type="password" placeholder="password"> <br><br> 
+    <select>
+      <option value="male">Male</option> 
+     
+      <option value="male">Female</option>  
+      
+      <option value="male">Other</option>
+    </select>
+    <br><br>
+    <textarea placeholder="Tell us about you..."></textarea>
+    <br><br>
+    <input type="submit">
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

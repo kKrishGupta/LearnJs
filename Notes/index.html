@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Call Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Profile Card -->
+  <div class="profile-card">
+    <div class="profile-left">
+      <div class="profile-actions">
+        <button class="add-note">+</button>
+        <button>↑</button>
+        <button>↓</button>
+      </div>
+      <div class="profile-info">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="user" class="avatar">
+        <h3>Fatima Uma</h3>
+        <div class="info">
+          <div>
+            <p>Home town</p>
+            <p>Bookings</p>
+          </div>
+          <div>
+            <p>Singapore</p>
+            <p>3 times</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="call">📞 Call</button>
+          <button class="message">Message</button>
+        </div>
+      </div>
+    </div>
+    <div class="color-dots">
+      <span class="dot black"></span>
+      <span class="dot purple"></span>
+      <span class="dot orange"></span>
+      <span class="dot green"></span>
+    </div>
+  </div>
+
+  <!-- New Call Modal -->
+<div class="modal hidden" id="callModal">
+  <div class="modal-content">
+    <h2>New Call</h2>
+    
+    <!-- Form starts here -->
+    <form id="callForm">
+      <label for="imageUrl">Image URL</label>
+      <input
+        required
+        type="text"
+        id="imageUrl"
+        name="imageUrl"
+        placeholder="https://example.com/photo.jpg"
+      >
+
+      <label for="fullName">Full Name</label>
+      <input
+        required
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Enter full name"
+      >
+
+      <label for="homeTown">Home Town</label>
+      <input
+        required
+        type="text"
+        id="homeTown"
+        name="homeTown"
+        placeholder="Enter home town"
+      >
+
+      <label for="purpose">Purpose</label>
+      <input
+        required
+        type="text"
+        id="purpose"
+        name="purpose"
+        placeholder="e.g. Quick appointment note"
+      >
+
+      <label>Category</label>
+      <div class="categories">
+        <button type="button" class="cat emergency">Emergency</button>
+        <button type="button" class="cat important">Important</button>
+        <button type="button" class="cat urgent">Urgent</button>
+        <button type="button" class="cat norush">No Rush</button>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="create">Create Note</button>
+        <button type="button" class="close">Close</button>
+      </div>
+    </form>
+    <!-- Form ends here -->
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
